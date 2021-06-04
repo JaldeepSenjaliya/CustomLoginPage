@@ -11,15 +11,15 @@
 		2617DFCA2641E0F80078B6B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2617DFC92641E0F80078B6B5 /* SceneDelegate.swift */; };
 		2617DFCC2641E0F80078B6B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2617DFCB2641E0F80078B6B5 /* ViewController.swift */; };
 		2617DFCF2641E0F80078B6B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2617DFCD2641E0F80078B6B5 /* Main.storyboard */; };
-		2617DFD12641E0F80078B6B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2617DFD02641E0F80078B6B5 /* Assets.xcassets */; };
 		2617DFD42641E0F80078B6B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2617DFD22641E0F80078B6B5 /* LaunchScreen.storyboard */; };
 		2617DFDC2641E1980078B6B5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2617DFDB2641E1980078B6B5 /* SignUpViewController.swift */; };
 		2617DFE02641E1C50078B6B5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2617DFDF2641E1C50078B6B5 /* LoginViewController.swift */; };
 		2617DFE42641F2A00078B6B5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2617DFE22641F29F0078B6B5 /* Constants.swift */; };
 		2617DFE52641F2A00078B6B5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2617DFE32641F2A00078B6B5 /* Utilities.swift */; };
 		2617DFE82642044B0078B6B5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2617DFE72642044B0078B6B5 /* GoogleService-Info.plist */; };
+		262997002669605400047A7B /* moreOptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262996FF2669605400047A7B /* moreOptionsTableViewCell.swift */; };
+		2629970226697DAF00047A7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2629970126697DAF00047A7B /* Assets.xcassets */; };
 		268085CF265DBBFA00559B9A /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268085CE265DBBFA00559B9A /* ForgotPasswordViewController.swift */; };
-		26B3C6532642F50A00B6CA3E /* loginbg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 26B3C6522642F50A00B6CA3E /* loginbg.mp4 */; };
 		26DB10342658BC9200FB57C1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DB10332658BC9200FB57C1 /* HomeViewController.swift */; };
 		26DB10362658BCAA00FB57C1 /* StataticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DB10352658BCAA00FB57C1 /* StataticsViewController.swift */; };
 		26DB10382658BCB700FB57C1 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DB10372658BCB700FB57C1 /* HistoryViewController.swift */; };
@@ -36,7 +36,6 @@
 		2617DFC92641E0F80078B6B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2617DFCB2641E0F80078B6B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2617DFCE2641E0F80078B6B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2617DFD02641E0F80078B6B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2617DFD32641E0F80078B6B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2617DFD52641E0F80078B6B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2617DFDB2641E1980078B6B5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -44,8 +43,9 @@
 		2617DFE22641F29F0078B6B5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2617DFE32641F2A00078B6B5 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		2617DFE72642044B0078B6B5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		262996FF2669605400047A7B /* moreOptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreOptionsTableViewCell.swift; sourceTree = "<group>"; };
+		2629970126697DAF00047A7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		268085CE265DBBFA00559B9A /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
-		26B3C6522642F50A00B6CA3E /* loginbg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginbg.mp4; sourceTree = "<group>"; };
 		26DB10332658BC9200FB57C1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		26DB10352658BCAA00FB57C1 /* StataticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StataticsViewController.swift; sourceTree = "<group>"; };
 		26DB10372658BCB700FB57C1 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +87,7 @@
 			children = (
 				2617DFD52641E0F80078B6B5 /* Info.plist */,
 				2617DFE72642044B0078B6B5 /* GoogleService-Info.plist */,
+				2629970126697DAF00047A7B /* Assets.xcassets */,
 				26B3C6542642F5CF00B6CA3E /* Media */,
 				26B3C6552642F5FE00B6CA3E /* Delegates */,
 				2617DFE62641F2B80078B6B5 /* Helpers */,
@@ -106,6 +107,7 @@
 				26DB10352658BCAA00FB57C1 /* StataticsViewController.swift */,
 				26DB10372658BCB700FB57C1 /* HistoryViewController.swift */,
 				26DB10392658BCC600FB57C1 /* MoreViewController.swift */,
+				262996FF2669605400047A7B /* moreOptionsTableViewCell.swift */,
 				268085CE265DBBFA00559B9A /* ForgotPasswordViewController.swift */,
 			);
 			path = "View Controllers";
@@ -123,8 +125,6 @@
 		26B3C6542642F5CF00B6CA3E /* Media */ = {
 			isa = PBXGroup;
 			children = (
-				2617DFD02641E0F80078B6B5 /* Assets.xcassets */,
-				26B3C6522642F50A00B6CA3E /* loginbg.mp4 */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -224,9 +224,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2617DFD42641E0F80078B6B5 /* LaunchScreen.storyboard in Resources */,
-				26B3C6532642F50A00B6CA3E /* loginbg.mp4 in Resources */,
 				2617DFE82642044B0078B6B5 /* GoogleService-Info.plist in Resources */,
-				2617DFD12641E0F80078B6B5 /* Assets.xcassets in Resources */,
+				2629970226697DAF00047A7B /* Assets.xcassets in Resources */,
 				2617DFCF2641E0F80078B6B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				262997002669605400047A7B /* moreOptionsTableViewCell.swift in Sources */,
 				2617DFE02641E1C50078B6B5 /* LoginViewController.swift in Sources */,
 				2617DFCC2641E0F80078B6B5 /* ViewController.swift in Sources */,
 				2617DFC82641E0F80078B6B5 /* AppDelegate.swift in Sources */,

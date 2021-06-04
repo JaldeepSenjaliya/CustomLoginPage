@@ -20,6 +20,11 @@ struct Constants {
         static let tabBarViewController = "tabBarVC"
         static let forgotPasswordSegue = "forgotPasswordSegue"
         static let signUpSegue = "signUpSegue"
+        static let navigateToSignUpVC = "navigateToSignUp"
+    }
+    
+    struct cellIdentifiers {
+        static let moreOptions = "moreOptionsReusableCell"
     }
     
 }

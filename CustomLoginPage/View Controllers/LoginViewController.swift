@@ -101,6 +101,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     let tabBarViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.tabBarViewController) as! UITabBarController
                     self.view.window?.rootViewController = tabBarViewController
                     self.view.window?.makeKeyAndVisible()
+                    
+                    //self.performSegue(withIdentifier: "navigateToHome", sender: self)
                 }
             }
         }
@@ -122,6 +124,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func facebookLoginTapped(_ sender: UIButton) {
+    
+        UIApplication.shared.open(URL(string: "https://www.facebook.com")!, options: [:], completionHandler: nil)
     }
     
     
