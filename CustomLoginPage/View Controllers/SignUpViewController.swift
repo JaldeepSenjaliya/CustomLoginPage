@@ -33,8 +33,8 @@ class SignUpViewController: UIViewController {
         
         //Set images for textFields
         let userName = UIImage(named: "Profile")
-        let email = UIImage(named: "Email")
-        let password = UIImage(named: "Password")
+        let email = UIImage(named: "email")
+        let password = UIImage(named: "password")
         
         //Style the elements
         Utilities.styleTextField(nameTextField)

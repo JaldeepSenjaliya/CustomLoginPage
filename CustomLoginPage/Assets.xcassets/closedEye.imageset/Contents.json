@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "email.svg",
+      "filename" : "closedEye.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "email-1.svg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "email-2.svg",
       "idiom" : "universal",
       "scale" : "3x"
     }

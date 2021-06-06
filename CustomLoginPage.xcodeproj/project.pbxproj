@@ -20,6 +20,8 @@
 		262997002669605400047A7B /* moreOptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262996FF2669605400047A7B /* moreOptionsTableViewCell.swift */; };
 		2629970226697DAF00047A7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2629970126697DAF00047A7B /* Assets.xcassets */; };
 		268085CF265DBBFA00559B9A /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268085CE265DBBFA00559B9A /* ForgotPasswordViewController.swift */; };
+		26CCF00C266C9A28003C8EAB /* FAQTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CCF00B266C9A28003C8EAB /* FAQTableViewCell.swift */; };
+		26CCF00E266C9A50003C8EAB /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CCF00D266C9A50003C8EAB /* FAQViewController.swift */; };
 		26DB10342658BC9200FB57C1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DB10332658BC9200FB57C1 /* HomeViewController.swift */; };
 		26DB10362658BCAA00FB57C1 /* StataticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DB10352658BCAA00FB57C1 /* StataticsViewController.swift */; };
 		26DB10382658BCB700FB57C1 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DB10372658BCB700FB57C1 /* HistoryViewController.swift */; };
@@ -46,6 +48,8 @@
 		262996FF2669605400047A7B /* moreOptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreOptionsTableViewCell.swift; sourceTree = "<group>"; };
 		2629970126697DAF00047A7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		268085CE265DBBFA00559B9A /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		26CCF00B266C9A28003C8EAB /* FAQTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTableViewCell.swift; sourceTree = "<group>"; };
+		26CCF00D266C9A50003C8EAB /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		26DB10332658BC9200FB57C1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		26DB10352658BCAA00FB57C1 /* StataticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StataticsViewController.swift; sourceTree = "<group>"; };
 		26DB10372658BCB700FB57C1 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				26DB10392658BCC600FB57C1 /* MoreViewController.swift */,
 				262996FF2669605400047A7B /* moreOptionsTableViewCell.swift */,
 				268085CE265DBBFA00559B9A /* ForgotPasswordViewController.swift */,
+				26CCF00B266C9A28003C8EAB /* FAQTableViewCell.swift */,
+				26CCF00D266C9A50003C8EAB /* FAQViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -279,8 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26CCF00C266C9A28003C8EAB /* FAQTableViewCell.swift in Sources */,
 				262997002669605400047A7B /* moreOptionsTableViewCell.swift in Sources */,
 				2617DFE02641E1C50078B6B5 /* LoginViewController.swift in Sources */,
+				26CCF00E266C9A50003C8EAB /* FAQViewController.swift in Sources */,
 				2617DFCC2641E0F80078B6B5 /* ViewController.swift in Sources */,
 				2617DFC82641E0F80078B6B5 /* AppDelegate.swift in Sources */,
 				26DB10382658BCB700FB57C1 /* HistoryViewController.swift in Sources */,

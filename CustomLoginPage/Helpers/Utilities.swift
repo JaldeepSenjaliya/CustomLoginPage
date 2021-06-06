@@ -22,23 +22,24 @@ class Utilities {
     static func addTextFieldImage(textField: UITextField, andImage image: UIImage) {
         
         //Create textField view
-        let textFieldView = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        let textFieldLeftView = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         
         //Create textField subview and add image
         let textFieldImageView = UIImageView(image: image)
+        
+        //Add color to textField Image
+        textFieldImageView.tintColor  = .darkGray
         
         //Set subview frame
         textFieldImageView.frame = CGRect(x: 15, y: 8, width: 25, height: 25)
         
         //Add subview
-        textFieldView.addSubview(textFieldImageView)
+        textFieldLeftView.addSubview(textFieldImageView)
         
         //Set leftside textField properties
-        textField.leftView = textFieldView
+        textField.leftView = textFieldLeftView
         textField.leftViewMode = .always
     }
-    
-    
     
     static func styleButton(_ button:UIButton) {
         
