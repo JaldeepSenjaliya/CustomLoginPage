@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "howToUse.svg",
+      "filename" : "howToUseApp.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "howToUse-1.svg",
+      "filename" : "howToUseApp-1.svg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "howToUse-2.svg",
+      "filename" : "howToUseApp-2.svg",
       "idiom" : "universal",
       "scale" : "3x"
     }

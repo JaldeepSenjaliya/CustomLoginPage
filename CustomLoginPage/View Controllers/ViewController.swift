@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getNavigationBarGradient()
+        //getNavigationBarGradient()
         
     }
     
@@ -35,6 +35,9 @@ class ViewController: UIViewController {
     //    layer.insertSublayer(gradientLayer, at: 0)
     //
     //}
+    
+    
+    //Function to add Gradient in Navigation Bar
     
     func getNavigationBarGradient() {
         
@@ -77,6 +80,7 @@ class ViewController: UIViewController {
     }
     
 }
+
 
 
 

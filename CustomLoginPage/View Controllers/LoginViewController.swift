@@ -17,11 +17,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var gmailLoginButton: UIButton!
     @IBOutlet var facebookLoginButton: UIButton!
     
+    var isIconClicked = true
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpElement()
-        getNavigationBarGradient()
+        //getNavigationBarGradient()
         
     }
     
@@ -31,8 +33,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         errorLabel.alpha = 0
         
         //Set images for textFields
-        let email = UIImage(named: "Email")
-        let password = UIImage(named: "Password")
+        let emailIcon = UIImage(named: "email")
+        let passwordLeftIcon = UIImage(named: "password")
+        let passwordRightIcon = UIImage(named: "closedEye")
         
         //Style the elements
         Utilities.styleTextField(emailTextField)
@@ -40,8 +43,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         Utilities.styleButton(loginButton)
         Utilities.styleButton(facebookLoginButton)
         Utilities.styleButton(gmailLoginButton)
-        Utilities.addTextFieldImage(textField: emailTextField, andImage: email!)
-        Utilities.addTextFieldImage(textField: passwordTextField, andImage: password!)
+        Utilities.addTextFieldImage(textField: emailTextField, andImage: emailIcon!)
+        Utilities.addTextFieldImage(textField: passwordTextField, andImage: passwordLeftIcon!)
+        addPasswordEyeIcon(textField: passwordTextField, andImage: passwordRightIcon!)
     }
     
     //Check the fields and validate that the data is correct. If everything is correct, this method returns
@@ -134,52 +138,58 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-
-    func getNavigationBarGradient() {
-        
-        if let navigationBar = self.navigationController?.navigationBar {
-            
-            let gradient = CAGradientLayer()
-            
-            var bounds = navigationBar.bounds
-            
-            bounds.size.height += view.window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
-            
-            gradient.frame = bounds
-            
-            gradient.colors = [UIColor.init(red: 78/255, green: 114/255, blue: 186/255, alpha: 1).cgColor, UIColor.init(red: 62/255, green:178/255, blue: 174/255, alpha: 1).cgColor]
-            
-            gradient.startPoint = CGPoint(x: 0, y: 0)
-            
-            gradient.endPoint = CGPoint(x: 1, y: 0)
-            
-            if let image = getImageFrom(gradientLayer: gradient) {
-                navigationBar.setBackgroundImage(image, for: UIBarMetrics.default)
-                navigationBar.tintColor = UIColor.white
-            }
-        }
-    }
-    
-    
-    func getImageFrom(gradientLayer: CAGradientLayer) -> UIImage? {
-        
-        var gradientImage: UIImage?
-        UIGraphicsBeginImageContext(gradientLayer.frame.size)
-        
-        if let context = UIGraphicsGetCurrentContext() {
-            gradientLayer.render(in: context)
-            gradientImage = UIGraphicsGetImageFromCurrentImageContext()?.resizableImage(withCapInsets: UIEdgeInsets.zero, resizingMode: .stretch)
-        }
-        
-        UIGraphicsEndImageContext()
-        return gradientImage
-    }
-    
     //Dismiss keyboard when touch outside
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
     
+    
+    func addPasswordEyeIcon(textField: UITextField, andImage image: UIImage) {
+        
+        //Create textField view
+        let textFieldRightView = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        
+        //Create textField subview and add image
+        let textFieldImageView = UIImageView(image: image)
+        
+        //Set subview frame
+        textFieldImageView.frame = CGRect(x: 0, y: 8, width: 25, height: 25)
+        
+        //Add subview
+        textFieldRightView.addSubview(textFieldImageView)
+        
+        //Set leftside textField properties
+        textField.rightView = textFieldRightView
+        textField.rightViewMode = .always
+        
+       
+        //Add color to textField Image
+        textFieldImageView.tintColor = .darkGray
+        
+        //Add Tap Gesture
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer: )))
+        textFieldImageView.isUserInteractionEnabled = true
+        textFieldImageView.addGestureRecognizer(tapGestureRecognizer)
+        
+        
+    }
+    
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+        
+        let tappedImage = tapGestureRecognizer.view as! UIImageView
+         
+        if isIconClicked {
+            isIconClicked = false
+            tappedImage.image = UIImage(named: "openEye")
+            passwordTextField.isSecureTextEntry = false
+            
+        } else {
+            isIconClicked = true
+            tappedImage.image = UIImage(named: "closedEye")
+            passwordTextField.isSecureTextEntry = true
+        }
+        
+    }
 }
 
 
