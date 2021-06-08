@@ -1035,21 +1035,311 @@
             </objects>
             <point key="canvasLocation" x="3366" y="2117"/>
         </scene>
-        <!--Acrivity History-->
+        <!--Activity History-->
         <scene sceneID="SP4-Jn-Ut3">
             <objects>
-                <viewController id="KQJ-Hq-Uam" sceneMemberID="viewController">
+                <viewController id="KQJ-Hq-Uam" customClass="ActivityHistoryViewController" customModule="CustomLoginPage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cre-gW-Bjp">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wBH-fk-c9y" userLabel="Title View">
+                                <rect key="frame" x="5" y="98" width="418" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meditation" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAM-mN-XA6">
+                                        <rect key="frame" x="10" y="10" width="342.66666666666669" height="29"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="110" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J26-LZ-gmc">
+                                        <rect key="frame" x="363" y="10" width="45" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="Kaq-8X-lvY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Become more and more you" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afm-ZV-1V2">
+                                        <rect key="frame" x="10" y="44" width="343" height="21"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Day" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GA3-qO-4Jl">
+                                        <rect key="frame" x="363" y="44" width="45" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="7uC-zP-PqH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <constraints>
+                                    <constraint firstItem="GA3-qO-4Jl" firstAttribute="leading" secondItem="afm-ZV-1V2" secondAttribute="trailing" constant="10" id="6J9-Zy-z2H"/>
+                                    <constraint firstItem="SAM-mN-XA6" firstAttribute="firstBaseline" secondItem="J26-LZ-gmc" secondAttribute="firstBaseline" id="83L-yB-AHc"/>
+                                    <constraint firstAttribute="trailing" secondItem="J26-LZ-gmc" secondAttribute="trailing" constant="10" id="GGH-pv-xVs"/>
+                                    <constraint firstItem="SAM-mN-XA6" firstAttribute="leading" secondItem="wBH-fk-c9y" secondAttribute="leading" constant="10" id="Hzo-wU-tXN"/>
+                                    <constraint firstItem="SAM-mN-XA6" firstAttribute="top" secondItem="wBH-fk-c9y" secondAttribute="top" constant="10" id="R1j-YU-17r"/>
+                                    <constraint firstItem="J26-LZ-gmc" firstAttribute="top" secondItem="wBH-fk-c9y" secondAttribute="top" constant="10" id="VXb-56-qhi"/>
+                                    <constraint firstItem="afm-ZV-1V2" firstAttribute="leading" secondItem="wBH-fk-c9y" secondAttribute="leading" constant="10" id="XNA-yK-f8H"/>
+                                    <constraint firstItem="J26-LZ-gmc" firstAttribute="leading" secondItem="SAM-mN-XA6" secondAttribute="trailing" constant="10.33" id="YCy-bQ-mB7"/>
+                                    <constraint firstItem="afm-ZV-1V2" firstAttribute="firstBaseline" secondItem="GA3-qO-4Jl" secondAttribute="firstBaseline" id="bbq-CO-EjU"/>
+                                    <constraint firstAttribute="trailing" secondItem="GA3-qO-4Jl" secondAttribute="trailing" constant="10" id="cLI-z6-APT"/>
+                                    <constraint firstItem="afm-ZV-1V2" firstAttribute="top" secondItem="SAM-mN-XA6" secondAttribute="bottom" constant="5" id="eDb-Ry-eMh"/>
+                                    <constraint firstAttribute="bottom" secondItem="afm-ZV-1V2" secondAttribute="bottom" constant="10" id="tWl-mR-blg"/>
+                                    <constraint firstAttribute="bottom" secondItem="GA3-qO-4Jl" secondAttribute="bottom" constant="10" id="xsd-ic-1Ol"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGx-mu-hrF" userLabel="Progress View">
+                                <rect key="frame" x="5" y="193" width="418" height="210"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cXE-7M-GWd" userLabel="Progress Stats View">
+                                        <rect key="frame" x="230" y="30" width="178" height="150"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Uq2-ev-Ws5">
+                                                <rect key="frame" x="0.0" y="0.0" width="178" height="150"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days Since Started" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="652-dq-nvG">
+                                                        <rect key="frame" x="10.333333333333343" y="0.0" width="157.66666666666666" height="20"/>
+                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                        <color key="textColor" red="0.24313725489999999" green="0.69803921570000005" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="200" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyA-ff-iR0">
+                                                        <rect key="frame" x="66.666666666666686" y="22" width="45" height="29"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="45" id="r4I-5s-go9"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                                        <color key="textColor" red="0.24313725489999999" green="0.69803921570000005" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  This Month" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBU-xD-qc0">
+                                                        <rect key="frame" x="36.999999999999993" y="53" width="104.33333333333331" height="21"/>
+                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                                        <color key="textColor" red="0.24313725489999999" green="0.69803921570000005" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text=" 15" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFx-mg-iJ4">
+                                                        <rect key="frame" x="66.666666666666686" y="76" width="45" height="29"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="45" id="p5I-cJ-QCi"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                                        <color key="textColor" red="0.24313725489999999" green="0.69803921570000005" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Streak" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hG-PZ-Cnc">
+                                                        <rect key="frame" x="58" y="107" width="62.333333333333343" height="21"/>
+                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                                        <color key="textColor" red="0.24313725489999999" green="0.69803921570000005" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="  4" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9k-y6-Kjg">
+                                                        <rect key="frame" x="66.666666666666686" y="130" width="45" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="45" id="PAw-2i-RDG"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                                        <color key="textColor" red="0.24313725489999999" green="0.69803921570000005" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Uq2-ev-Ws5" firstAttribute="leading" secondItem="cXE-7M-GWd" secondAttribute="leading" id="1zc-fK-Qh5"/>
+                                            <constraint firstAttribute="trailing" secondItem="Uq2-ev-Ws5" secondAttribute="trailing" id="6ik-cd-P1g"/>
+                                            <constraint firstItem="Uq2-ev-Ws5" firstAttribute="top" secondItem="cXE-7M-GWd" secondAttribute="top" id="VPk-Ze-nFi"/>
+                                            <constraint firstAttribute="bottom" secondItem="Uq2-ev-Ws5" secondAttribute="bottom" id="nCR-ep-omf"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gjd-hd-9qQ" customClass="CircularProgressView" customModule="CustomLoginPage" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="30" width="150" height="150"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 55%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngN-HB-rsS">
+                                                <rect key="frame" x="29" y="52" width="92" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="Itx-eY-P30"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="40"/>
+                                                <color key="textColor" red="0.24313725489999999" green="0.69803921570000005" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="ngN-HB-rsS" firstAttribute="centerX" secondItem="gjd-hd-9qQ" secondAttribute="centerX" id="DTi-Fm-gqL"/>
+                                            <constraint firstItem="ngN-HB-rsS" firstAttribute="centerY" secondItem="gjd-hd-9qQ" secondAttribute="centerY" id="Ml5-pl-Vsj"/>
+                                            <constraint firstAttribute="width" constant="150" id="WBy-lc-Mis"/>
+                                            <constraint firstAttribute="height" constant="150" id="fFg-Pj-NEk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="gjd-hd-9qQ" firstAttribute="top" secondItem="UGx-mu-hrF" secondAttribute="top" constant="30" id="2iD-as-ZiX"/>
+                                    <constraint firstAttribute="bottom" secondItem="gjd-hd-9qQ" secondAttribute="bottom" constant="30" id="4Cd-9h-5xh"/>
+                                    <constraint firstItem="gjd-hd-9qQ" firstAttribute="leading" secondItem="UGx-mu-hrF" secondAttribute="leading" constant="40" id="Re0-qo-Yjb"/>
+                                    <constraint firstItem="cXE-7M-GWd" firstAttribute="top" secondItem="UGx-mu-hrF" secondAttribute="top" constant="30" id="Ubt-Wv-TTq"/>
+                                    <constraint firstAttribute="trailing" secondItem="cXE-7M-GWd" secondAttribute="trailing" constant="10" id="YNK-fc-YmE"/>
+                                    <constraint firstItem="cXE-7M-GWd" firstAttribute="leading" secondItem="gjd-hd-9qQ" secondAttribute="trailing" constant="40" id="eyf-vy-t63"/>
+                                    <constraint firstAttribute="bottom" secondItem="cXE-7M-GWd" secondAttribute="bottom" constant="30" id="lKJ-kh-Jks"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gmO-3k-CHC" userLabel="TableView Heading">
+                                <rect key="frame" x="5" y="423" width="418" height="65"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVz-Rp-ggZ">
+                                        <rect key="frame" x="10" y="10" width="55" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="GvD-xG-H2F"/>
+                                            <constraint firstAttribute="width" constant="55" id="rbt-tA-MvA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Personal Note" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSg-9i-R1E">
+                                        <rect key="frame" x="187" y="10" width="86" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="86" id="cKi-Ak-WMP"/>
+                                            <constraint firstAttribute="height" constant="45" id="jV4-R0-23u"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Practiced Days" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8Z-dn-isq">
+                                        <rect key="frame" x="323" y="10" width="85" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="P8w-Qa-chp"/>
+                                            <constraint firstAttribute="width" constant="85" id="d4j-Af-AXa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.69803921570000005" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="u8Z-dn-isq" secondAttribute="trailing" constant="10" id="27Q-Si-Wgc"/>
+                                    <constraint firstItem="vSg-9i-R1E" firstAttribute="top" secondItem="gmO-3k-CHC" secondAttribute="top" constant="10" id="EqB-Dn-GAq"/>
+                                    <constraint firstItem="u8Z-dn-isq" firstAttribute="top" secondItem="gmO-3k-CHC" secondAttribute="top" constant="10" id="GWu-A9-Et8"/>
+                                    <constraint firstItem="AVz-Rp-ggZ" firstAttribute="leading" secondItem="gmO-3k-CHC" secondAttribute="leading" constant="10" id="H07-Ld-DEU"/>
+                                    <constraint firstItem="AVz-Rp-ggZ" firstAttribute="top" secondItem="gmO-3k-CHC" secondAttribute="top" constant="10" id="LGQ-bQ-1Bj"/>
+                                    <constraint firstAttribute="bottom" secondItem="u8Z-dn-isq" secondAttribute="bottom" constant="10" id="VKQ-co-KxD"/>
+                                    <constraint firstAttribute="bottom" secondItem="vSg-9i-R1E" secondAttribute="bottom" constant="10" id="YcO-dN-m29"/>
+                                    <constraint firstItem="u8Z-dn-isq" firstAttribute="leading" secondItem="vSg-9i-R1E" secondAttribute="trailing" constant="50" id="ZZi-HW-1ys"/>
+                                    <constraint firstItem="vSg-9i-R1E" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AVz-Rp-ggZ" secondAttribute="trailing" constant="8" symbolic="YES" id="f0p-1v-t4J"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pic-nJ-bIY">
+                                <rect key="frame" x="5" y="488" width="418" height="438"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" red="0.24313725489999999" green="0.69803921570000005" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="activityDetailsViewCellIdentifier" rowHeight="159" id="CST-sf-okR" customClass="ActivityProgressTableViewCell" customModule="CustomLoginPage" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="418" height="159"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CST-sf-okR" id="TQD-we-uO7">
+                                            <rect key="frame" x="0.0" y="0.0" width="418" height="159"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Meditation" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhW-CK-pTY">
+                                                    <rect key="frame" x="10" y="69" width="127" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="127" id="53c-UB-zu1"/>
+                                                        <constraint firstAttribute="height" constant="24" id="u8D-pk-0AO"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                                    <color key="textColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZYU-KA-aXf">
+                                                    <rect key="frame" x="147" y="11" width="212" height="137"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="100" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voy-0m-Bhk">
+                                                    <rect key="frame" x="369" y="70" width="39" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="39" id="1H1-tw-itL"/>
+                                                        <constraint firstAttribute="height" constant="24" id="po9-7z-nYA"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                                    <color key="textColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ZYU-KA-aXf" firstAttribute="top" secondItem="TQD-we-uO7" secondAttribute="topMargin" id="07j-hy-b6z"/>
+                                                <constraint firstItem="voy-0m-Bhk" firstAttribute="top" secondItem="TQD-we-uO7" secondAttribute="top" constant="70" id="1Au-Uu-4Cp"/>
+                                                <constraint firstItem="OhW-CK-pTY" firstAttribute="leading" secondItem="TQD-we-uO7" secondAttribute="leading" constant="10" id="9Jo-Yw-nq2"/>
+                                                <constraint firstAttribute="bottom" secondItem="OhW-CK-pTY" secondAttribute="bottom" constant="70" id="S6c-1g-HI2"/>
+                                                <constraint firstItem="OhW-CK-pTY" firstAttribute="top" secondItem="TQD-we-uO7" secondAttribute="top" constant="69" id="c48-l1-hlm"/>
+                                                <constraint firstItem="ZYU-KA-aXf" firstAttribute="leading" secondItem="OhW-CK-pTY" secondAttribute="trailing" constant="10" id="kav-Hv-qQC"/>
+                                                <constraint firstAttribute="bottom" secondItem="voy-0m-Bhk" secondAttribute="bottom" constant="69" id="rE7-wG-Kcb"/>
+                                                <constraint firstAttribute="trailing" secondItem="voy-0m-Bhk" secondAttribute="trailing" constant="10" id="rk0-KJ-bau"/>
+                                                <constraint firstItem="ZYU-KA-aXf" firstAttribute="bottom" secondItem="TQD-we-uO7" secondAttribute="bottomMargin" id="tgV-gM-d9K"/>
+                                                <constraint firstItem="voy-0m-Bhk" firstAttribute="leading" secondItem="ZYU-KA-aXf" secondAttribute="trailing" constant="10" id="xdb-Pu-wqu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="activityNameLabel" destination="OhW-CK-pTY" id="05A-MF-G00"/>
+                                            <outlet property="activityTrackingView" destination="TQD-we-uO7" id="ygH-PD-MZE"/>
+                                            <outlet property="personalNoteTextView" destination="ZYU-KA-aXf" id="re6-cG-klW"/>
+                                            <outlet property="practicedDayLabel" destination="voy-0m-Bhk" id="ch2-6w-fWS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="8yE-aD-RQ1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="pic-nJ-bIY" secondAttribute="bottom" id="4D6-0z-2qk"/>
+                            <constraint firstItem="gmO-3k-CHC" firstAttribute="leading" secondItem="8yE-aD-RQ1" secondAttribute="leading" constant="5" id="8qq-lo-s05"/>
+                            <constraint firstItem="8yE-aD-RQ1" firstAttribute="trailing" secondItem="UGx-mu-hrF" secondAttribute="trailing" constant="5" id="9mG-Jk-OO3"/>
+                            <constraint firstItem="gmO-3k-CHC" firstAttribute="top" secondItem="UGx-mu-hrF" secondAttribute="bottom" constant="20" id="Ab9-cV-kqN"/>
+                            <constraint firstItem="wBH-fk-c9y" firstAttribute="leading" secondItem="8yE-aD-RQ1" secondAttribute="leading" constant="5" id="Dky-pn-JDW"/>
+                            <constraint firstItem="wBH-fk-c9y" firstAttribute="top" secondItem="8yE-aD-RQ1" secondAttribute="top" constant="10" id="MKD-oJ-HZE"/>
+                            <constraint firstItem="UGx-mu-hrF" firstAttribute="leading" secondItem="8yE-aD-RQ1" secondAttribute="leading" constant="5" id="N8m-Jd-qez"/>
+                            <constraint firstItem="pic-nJ-bIY" firstAttribute="top" secondItem="gmO-3k-CHC" secondAttribute="bottom" id="Nlb-fe-C9A"/>
+                            <constraint firstItem="8yE-aD-RQ1" firstAttribute="trailing" secondItem="wBH-fk-c9y" secondAttribute="trailing" constant="5" id="P8b-xb-TGi"/>
+                            <constraint firstItem="8yE-aD-RQ1" firstAttribute="trailing" secondItem="gmO-3k-CHC" secondAttribute="trailing" constant="5" id="T3e-hB-Tfe"/>
+                            <constraint firstItem="pic-nJ-bIY" firstAttribute="leading" secondItem="8yE-aD-RQ1" secondAttribute="leading" constant="5" id="eoC-Ud-no4"/>
+                            <constraint firstItem="8yE-aD-RQ1" firstAttribute="trailing" secondItem="pic-nJ-bIY" secondAttribute="trailing" constant="5" id="gBE-6A-OtX"/>
+                            <constraint firstItem="UGx-mu-hrF" firstAttribute="top" secondItem="wBH-fk-c9y" secondAttribute="bottom" constant="20" id="yDb-dX-Vbb"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Acrivity History" id="3hD-qe-vco"/>
+                    <navigationItem key="navigationItem" title="Activity History" id="3hD-qe-vco"/>
+                    <connections>
+                        <outlet property="activityHeaderNameLabel" destination="SAM-mN-XA6" id="DFC-FF-rGT"/>
+                        <outlet property="activityProgressTableView" destination="pic-nJ-bIY" id="PXc-GO-s0V"/>
+                        <outlet property="activityTagLineLabel" destination="afm-ZV-1V2" id="H1a-1I-Lhx"/>
+                        <outlet property="circularProgressBar" destination="gjd-hd-9qQ" id="Crq-Tj-2Jg"/>
+                        <outlet property="dayLabel" destination="J26-LZ-gmc" id="tkw-Zj-sr4"/>
+                        <outlet property="daysSinceStartedLabel" destination="WyA-ff-iR0" id="Bt6-gG-1DI"/>
+                        <outlet property="progressView" destination="UGx-mu-hrF" id="rvF-0F-o2X"/>
+                        <outlet property="streakLabel" destination="H9k-y6-Kjg" id="Fet-hm-EB8"/>
+                        <outlet property="tableViewHeadingView" destination="gmO-3k-CHC" id="89E-s0-3AJ"/>
+                        <outlet property="thisMonthLabel" destination="FFx-mg-iJ4" id="qmt-Uy-Gvt"/>
+                        <outlet property="titleView" destination="wBH-fk-c9y" id="mp5-Uc-o4Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qHW-HX-vl8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2613" y="2117"/>
+            <point key="canvasLocation" x="2611.6822429906542" y="2116.8466522678186"/>
         </scene>
         <!--Privacy Policy-->
         <scene sceneID="HYI-8v-fIt">
@@ -1144,6 +1434,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

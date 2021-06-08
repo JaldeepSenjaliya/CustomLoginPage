@@ -26,6 +26,9 @@
 		26DB10362658BCAA00FB57C1 /* StataticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DB10352658BCAA00FB57C1 /* StataticsViewController.swift */; };
 		26DB10382658BCB700FB57C1 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DB10372658BCB700FB57C1 /* HistoryViewController.swift */; };
 		26DB103A2658BCC600FB57C1 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DB10392658BCC600FB57C1 /* MoreViewController.swift */; };
+		26DE85CB266FCBDB00994DA3 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DE85CA266FCBDB00994DA3 /* CircularProgressView.swift */; };
+		26DE85CD266FCC3100994DA3 /* ActivityHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DE85CC266FCC3100994DA3 /* ActivityHistoryViewController.swift */; };
+		26DE85D1266FE68E00994DA3 /* ActivityProgressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DE85D0266FE68E00994DA3 /* ActivityProgressTableViewCell.swift */; };
 		784D09BF94789FAD5B7D9BB1 /* Pods_CustomLoginPage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C71E262A365BE0977A6D30B /* Pods_CustomLoginPage.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +57,9 @@
 		26DB10352658BCAA00FB57C1 /* StataticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StataticsViewController.swift; sourceTree = "<group>"; };
 		26DB10372658BCB700FB57C1 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		26DB10392658BCC600FB57C1 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		26DE85CA266FCBDB00994DA3 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		26DE85CC266FCC3100994DA3 /* ActivityHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityHistoryViewController.swift; sourceTree = "<group>"; };
+		26DE85D0266FE68E00994DA3 /* ActivityProgressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityProgressTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,9 @@
 				268085CE265DBBFA00559B9A /* ForgotPasswordViewController.swift */,
 				26CCF00B266C9A28003C8EAB /* FAQTableViewCell.swift */,
 				26CCF00D266C9A50003C8EAB /* FAQViewController.swift */,
+				26DE85CC266FCC3100994DA3 /* ActivityHistoryViewController.swift */,
+				26DE85D0266FE68E00994DA3 /* ActivityProgressTableViewCell.swift */,
+				26DE85CA266FCBDB00994DA3 /* CircularProgressView.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -294,7 +303,10 @@
 				26DB10382658BCB700FB57C1 /* HistoryViewController.swift in Sources */,
 				26DB103A2658BCC600FB57C1 /* MoreViewController.swift in Sources */,
 				26DB10342658BC9200FB57C1 /* HomeViewController.swift in Sources */,
+				26DE85D1266FE68E00994DA3 /* ActivityProgressTableViewCell.swift in Sources */,
+				26DE85CD266FCC3100994DA3 /* ActivityHistoryViewController.swift in Sources */,
 				2617DFE42641F2A00078B6B5 /* Constants.swift in Sources */,
+				26DE85CB266FCBDB00994DA3 /* CircularProgressView.swift in Sources */,
 				2617DFDC2641E1980078B6B5 /* SignUpViewController.swift in Sources */,
 				268085CF265DBBFA00559B9A /* ForgotPasswordViewController.swift in Sources */,
 				2617DFE52641F2A00078B6B5 /* Utilities.swift in Sources */,
